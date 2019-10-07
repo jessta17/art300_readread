@@ -1,0 +1,371 @@
+@import url("https://use.typekit.net/fwn3qad.css");
+
+body{
+    background-color: rgb(168, 190, 174);
+    padding: 2;
+    margin: 2;
+   
+}
+pre{
+    display:none;
+}
+hr{
+    display: none;
+}
+.mynote pre{
+    display: block;
+}
+.toc{
+    
+    text-align: center;
+    font-family: "Trade Gothic LT Std", sans-serif;
+    font-size: .8em;
+    top: -10em;
+    
+   
+    
+
+}
+blockquote{
+    position: absolute;
+    left: 80em;
+    top: 
+}
+a{
+    color: rgb(4, 39, 14);
+}
+big{
+    color: rgb(239, 239, 239);
+    font-family: Mrs Eaves, serif;
+    font-size: 2em;
+    position: relative;
+    top: 0em;
+    margin-bottom: -10em;
+    right: 5em;
+    
+    
+}
+h1{
+    color: rgb(90, 90, 90);
+    font-family: Mrs Eaves, serif;
+    margin-bottom: -1em;
+    font-size: 3em;
+    font-weight: 200;
+    left: .1em;
+    width: 12em;
+    margin-top: 1em;
+    position: relative;
+}
+h1:first-of-type{
+color: rgb(239, 239, 239);
+  position: fixed;
+    top: .5em;
+    left: 18.2em;
+}
+h2{
+    color: rgb(239, 239, 239);
+    font-family: "Trade Gothic LT Std", sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    left: 8px;
+    position: relative;
+    
+    
+    
+}
+
+
+h2:first-of-type{
+    color: rgb(90, 90, 90);
+    position: fixed;
+    top: 5em;
+    left: 36.5em;
+    
+}
+.mynote{
+    font-family: "Trade Gothic LT Std", sans-serif;
+    color: rgb(95, 95, 95);
+    position: fixed;
+    left: 55em;
+
+}
+
+    p{
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+    font-family: "Trade Gothic LT Std", sans-serif;
+    font-weight: inherit;
+    left: 30px;
+    kerning: 5em;
+    width: 35em;
+    top: 1em;
+    
+    }
+
+
+
+
+
+/* ----------- SMART PHONES ----------- */
+ 
+ 
+@media only screen and (max-width: 800px) {
+
+    body{
+        background: rgb(117, 141, 172);
+    }
+    p{
+        color: rgb(170, 166, 166);
+        font-size: .983em;
+        line-height: .75em;
+        font-kerning: auto;
+        font-family: "Trade Gothic LT Std", sans-serif;
+        font-weight: inherit;
+        position: relative;
+        left: 20px;
+        
+    }
+    big{
+        color: rgb(239, 239, 239);
+        font-family: Mrs Eaves, serif;
+        font-size: 2em;
+        left: 0em;
+        top: 1em;
+        
+    }
+   
+    .toc{
+        color: rgb(135, 155, 181);
+        text-align: center;
+        font-family: "Trade Gothic LT Std", sans-serif;
+        font-size: .8em;
+        
+
+    
+    }
+
+    .main{
+        width: auto;
+        height: 100vh;
+        background-color:rgb(104, 106, 107);
+        padding:25px;
+        display: block;
+        position: fixed;
+        left:unset;
+        right:0;
+        top:0;
+        z-index: 100;
+      }
+      
+      .menu{
+        height: 80vh;
+        width: calc(100vw - 55px);
+        background-color:rgb(104, 106, 107);
+
+        overflow: scroll;
+        
+        display:none;
+      }
+      
+      .active .menu{
+        display:block;
+      }
+      
+      .active .main{
+        width:100vw;
+        }
+      
+      
+      
+      
+      
+      .hamburger {
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+        display: block
+      }
+      
+      /* Rotate first bar */
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+        display: block;
+      }
+      
+      /* Fade out the second bar */
+      .change .bar2 {
+        opacity: 0;
+        display:block
+      }
+      
+      /* Rotate last bar */
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+        display:block
+      }
+
+
+
+      
+    blockquote{
+        align-self: right;
+        
+    }
+    h1{
+        color: rgb(57, 62, 68);
+        font-family: Mrs Eaves, serif;
+        margin-bottom: -1em;
+        font-size: 1.5em;
+        font-weight: 200;
+        position: relative;
+        width: 11em;
+        left: .9em;
+    }
+    h1:first-of-type{
+        position: relative;
+        top: .5em;
+        left: .5em;
+        color: rgb(255, 255, 255);
+        font-size: 3em;
+        margin-top: -1em;
+    }
+    a{
+        color: rgb(135, 155, 181);
+    }
+    h2{
+        color: rgb(255, 255, 255);
+        font-family: "Trade Gothic LT Std", sans-serif;
+        font-weight: 100;
+        font-size: 1.3em;
+        position: relative;
+        left: .95em;
+    }
+    h2:first-of-type{
+    position: relative;
+    left: 1em;
+    top: 2em;
+    color: rgb(57, 62, 68);
+    
+}
+    .mynote{
+        font-family: "Trade Gothic LT Std", sans-serif;
+        color: rgb(57, 62, 68);
+        position: relative;
+        left: 1.6em;
+        margin-bottom: -7em;
+    }
+        p{
+        color: rgb(0, 0, 0);
+        font-size: .99em;
+        font-family: "Trade Gothic LT Std", sans-serif;
+        font-weight: inherit;
+        left: 1.6em;
+        kerning: 5em;
+        position: relative;
+        width: 27em;
+        line-height: 1.3em;
+        
+        }
+}
+ 
+/* ----------- TABLETS ----------- */
+ 
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+    body{
+        background: rgb(152, 124, 148);
+    }
+
+    .toc{
+    
+        text-align: left;
+        font-family: "Trade Gothic LT Std", sans-serif;
+        font-size: .8em;
+        left: 10em;
+    
+    }
+
+    blockquote{
+        
+        top: 1em;
+        left: -27em;
+        width: 20%;
+       
+    }
+    a{
+        color: rgb(36, 1, 31);
+    }
+    big{
+        color: rgb(239, 239, 239);
+        font-family: Mrs Eaves, serif;
+        font-size: 2em;
+        left: -4em;
+        top: 4em;
+        right:0em;
+        
+    }
+    h1{
+        color: rgb(90, 90, 90);
+        font-family: Mrs Eaves, serif;
+        margin-bottom: -1em;
+        font-size: 1.5em;
+        font-weight: 200;
+        left: 20.5em;
+        position: relative;
+        margin-top: -5em;
+    
+        
+    }
+    h1:first-of-type{
+        position: relative;
+        top: .5em;
+        left: 10.3em;
+        color: rgb(239, 239, 239);
+        font-size: 3em;
+        margin-top: -1em;
+    }
+    h2{
+        
+        font-family: "Trade Gothic LT Std", sans-serif;
+        font-weight: 100;
+        font-size: 1.5em;
+       left: 20.5em;;
+        position: relative;
+        color: rgb(239, 239, 239);
+        margin-bottom: -.7em;
+    }
+    h2:first-of-type{
+        position: relative;
+        left: 20.5em;
+        top: 1em;
+        color: rgb(90, 90, 90);
+    }
+    .mynote{
+        font-family: "Trade Gothic LT Std", sans-serif;
+        color: rgb(95, 95, 95);
+        position: relative;
+        left: 31em;
+    }
+        p{
+        color: rgb(0, 0, 0);
+        font-size: 1em;
+        font-family: "Trade Gothic LT Std", sans-serif;
+        font-weight: inherit;
+        left: 31em;
+        kerning: 5em;
+        position: relative;
+        width: 35em;
+        line-height: 1.3em;
+        
+        }
+   
+    
+}
